@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gelato Creamo | Carrito</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-page="carrito">
+  <header class="site-header">
+    <a class="brand" href="index.html">Gelato Creamo</a>
+    <nav class="main-nav">
+      <a href="index.html">Inicio</a>
+      <a href="sabores.html">Sabores</a>
+      <a class="active" href="carrito.html">Carrito <span class="cart-count"></span></a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <a class="shop-pill" href="sabores.html">Pedir</a>
+  </header>
+
+  <main class="cart-page">
+    <section class="cart-list">
+      <h1><span class="basket-icon">★</span> Tu Carrito</h1>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="empty-cart" id="emptyCart">
+        <p>Aun no elegiste sabores.</p>
+        <a class="btn" href="sabores.html">Ver Sabores</a>
+      </div>
+      <h2>¿Algo más?</h2>
+      <div class="extras">
+        <button class="extra-card" data-id="cono-extra" data-name="Cono Extra" data-price="3.00"
+          data-image="extra-cone">
+          <span class="crop extra-img">
+            <img src="https://i.pinimg.com/736x/2b/c8/92/2bc892b53447dbb23d4a59bc1c14989c.jpg" alt="Cono Extra">
+          </span>
+          <strong>Cono Extra</strong>
+          <small>Bs3.00</small>
+        </button>
+        <button class="extra-card" data-id="topping-caramelo" data-name="Topping Caramelo" data-price="1.50"
+          data-image="extra-caramel">
+          <span class="crop extra-img">
+            <img src="https://i.pinimg.com/736x/30/d4/73/30d4730b86c16f468e740748e23ce28f.jpg" alt="Topping Caramelo">
+          </span>
+          <strong>Topping Caramelo</strong>
+          <small>Bs1.50</small>
+        </button>
+      </div>
+    </section>
+
+    <aside class="checkout-panel">
+      <h2>Finalizar<br>Pedido</h2>
+      <form id="checkoutForm">
+        <label>Nombre Completo
+          <input type="text" placeholder="Ej. Bette Parker" required>
+        </label>
+        <label>Email
+          <input type="email" placeholder="bette@cones.com" required>
+        </label>
+        <fieldset>
+          <legend>Metodo de Pago</legend>
+          <div class="payment-options">
+            <label class="payment active"><input type="radio" name="payment" value="Tarjeta" checked> ✧ Tarjeta</label>
+            <label class="payment"><input type="radio" name="payment" value="Efectivo"> ★ Efectivo</label>
+          </div>
+        </fieldset>
+        <div class="summary">
+          <p><span>Subtotal</span><strong id="subtotal">$0.00</strong></p>
+          <p><span>Envio</span><strong>GRATIS</strong></p>
+          <p class="total"><span>Total</span><strong id="total">$0.00</strong></p>
+        </div>
+        <button class="btn btn-wide" type="submit">Completar Pedido ✧</button>
+        <small class="secure">✧ Pago 100% Seguro y Encriptado</small>
+      </form>
+    </aside>
+  </main>
+
+  <div class="checker"></div>
+  <footer class="footer cart-footer">
+    <h2>Gelato Creamo</h2>
+    <nav>
+      <a href="#">Privacidad</a>
+      <a href="#">Terminos</a>
+      <a href="#">Envios</a>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+    </nav>
+    <p>Alejandra Maria Rene Garcia Ordoñez ★ Paralelo 1 ★ H4</p>
+  </footer>
+
+  <div class="toast" id="toast">Pedido registrado</div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

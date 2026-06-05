@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gelato Creamo | Sabores</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body data-page="sabores">
+  <header class="site-header">
+    <a class="brand" href="index.html">Gelato Creamo</a>
+    <nav class="main-nav">
+      <a href="index.html">Inicio</a>
+      <a class="active" href="sabores.html">Sabores</a>
+      <a href="carrito.html">Carrito <span class="cart-count"></span></a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+    <a class="shop-pill" href="carrito.html">Ver Carrito</a>
+  </header>
+
+  <main class="flavors-page">
+    <section class="page-intro checker-soft">
+      <h1>Nuestros Sabores Artesanales</h1>
+      <p>Cada bola es una obra de arte, elaborada con ingredientes de origen local y tecnicas tradicionales. Desde lo
+        clasico hasta lo inesperado.</p>
+    </section>
+
+    <section class="flavor-grid" id="flavorGrid">
+      <article class="flavor-card" data-id="cookie" data-name="Cookie Crumble" data-price="6.00"
+        data-image="flavor-cookie">
+        <div class="crop flavor-img">
+          <img src="https://i.pinimg.com/1200x/21/c1/25/21c12533e2aa2e15fb1b93165a5dd565.jpg" alt="Cookie Crumble">
+        </div>
+        <h2>Cookie<br>Crumble</h2>
+        <p>Vainilla cremosa con trozos gigantes de galleta.</p>
+        <button class="btn add-flavor" type="button">Seleccionar Sabor</button>
+      </article>
+      <article class="flavor-card" data-id="pistachio" data-name="Pistachio Almond" data-price="6.50"
+        data-image="flavor-pistachio">
+        <div class="crop flavor-img">
+          <img src="https://i.pinimg.com/1200x/bc/5d/31/bc5d31a6d688ec521aba6729ba9d3104.jpg" alt="Pistachio Almond">
+        </div>
+        <h2>Pistachio<br>Almond</h2>
+        <p>Pistacho tostado de Sicilia con laminas crujientes de almendra.</p>
+        <button class="btn add-flavor" type="button">Seleccionar Sabor</button>
+      </article>
+      <article class="flavor-card" data-id="strawberry" data-name="Strawberry Bliss" data-price="5.50"
+        data-image="flavor-strawberry">
+        <div class="crop flavor-img">
+          <img src="https://i.pinimg.com/736x/54/6e/f6/546ef60b78d25fdd8c856ed044dcf56f.jpg" alt="Strawberry Bliss">
+        </div>
+        <h2>Strawberry<br>Bliss</h2>
+        <p>Fresas frescas de temporada maceradas en crema suave.</p>
+        <button class="btn add-flavor" type="button">Seleccionar Sabor</button>
+      </article>
+      <article class="flavor-card" data-id="black-cherry" data-name="Black Cherry" data-price="7.00"
+        data-image="flavor-cherry">
+        <div class="crop flavor-img">
+          <img src="https://i.pinimg.com/736x/1f/bc/81/1fbc81171bdc81f19bf811792771f735.jpg" alt="Black Cherry">
+        </div>
+        <h2>Black Cherry</h2>
+        <p>Cerezas negras silvestres con un toque de licor.</p>
+        <button class="btn add-flavor" type="button">Seleccionar Sabor</button>
+      </article>
+      <article class="flavor-card" data-id="midnight" data-name="Midnight Choco" data-price="5.50"
+        data-image="flavor-midnight">
+        <div class="crop flavor-img">
+          <img src="https://i.pinimg.com/1200x/34/03/3d/34033d4ce6d072af8c3ec77bb9ffe421.jpg" alt="Midnight Choco">
+        </div>
+        <h2>Midnight<br>Choco</h2>
+        <p>Cacao al 70% de origen unico, denso, oscuro y sedoso.</p>
+        <button class="btn add-flavor" type="button">Seleccionar Sabor</button>
+      </article>
+      <article class="flavor-card" data-id="mango" data-name="Mango Tango" data-price="5.00" data-image="flavor-mango">
+        <div class="crop flavor-img">
+          <img src="https://i.pinimg.com/1200x/4e/af/8c/4eaf8cd496588cc3df15af96f0386021.jpg" alt="Mango Tango">
+        </div>
+        <h2>Mango Tango</h2>
+        <p>Sorbete de mango maduro con una pizca de lima para brillar.</p>
+        <button class="btn add-flavor" type="button">Seleccionar Sabor</button>
+      </article>
+      <article class="flavor-card" data-id="bean" data-name="Classic Bean" data-price="5.00" data-image="flavor-bean">
+        <div class="crop flavor-img">
+          <img src="https://i.pinimg.com/736x/3c/38/d7/3c38d79b5e37ee5a51c8fafb67e6e268.jpg" alt="Classic Bean">
+        </div>
+        <h2>Classic Bean</h2>
+        <p>Vainilla de Madagascar real con granos visibles y una textura limpia.</p>
+        <button class="btn add-flavor" type="button">Seleccionar Sabor</button>
+      </article>
+      <article class="flavor-card" data-id="toffee" data-name="Salted Toffee" data-price="6.50"
+        data-image="flavor-toffee">
+        <div class="crop flavor-img">
+          <img src="https://i.pinimg.com/1200x/bc/fd/c6/bcfdc6732186490c0d6998d9a765d53c.jpg" alt="Salted Toffee">
+        </div>
+        <h2>Salted Toffee</h2>
+        <p>Caramelo salado quemado a mano con trozos crujientes.</p>
+        <button class="btn add-flavor" type="button">Seleccionar Sabor</button>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer flavor-footer">
+    <div class="ticker"><span>ARTISANAL JOY</span><b>•</b><span>FRESH DAILY</span><b>•</b><span>REAL
+        INGREDIENTS</span><b>•</b><span>GELATO CREAMO</span></div>
+    <h2>Gelato Creamo</h2>
+    <nav>
+      <a href="#">Privacidad</a>
+      <a href="#">Terminos</a>
+      <a href="#">Envios</a>
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+    </nav>
+    <p>Alejandra Maria Rene Garcia Ordoñez ★ Paralelo 1 ★ H4</p>
+  </footer>
+
+  <div class="toast" id="toast">Sabor agregado al carrito</div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
